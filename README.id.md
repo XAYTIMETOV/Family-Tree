@@ -32,9 +32,9 @@ NodeJS kerak bo'lsa:
 
 Kerakli paketlar o'rnatib bo'lingandan keyin, quyidagi qadamlarni bajarib, loyihani o'z tizimingizda ishga tushirishingiz mumkin: Repositoryni klonlash: bash git clone https://github.com/XAYTIMETOV/family_tree
 
-Loyihaning papkasiga o'tish: cd shajara
+Loyihaning papkasiga o'tish: cd Family-Tree
 
-Kerakli kutubxonalarni o'rnatish: composer install
+Composer o'rnatish: composer install
 
 .env faylni o'zgartiring va ma'lumotlar bazasi ma'lumotlarini kiriting:
 
