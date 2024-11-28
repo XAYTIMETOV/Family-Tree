@@ -55,12 +55,10 @@ Foydalanish:
     Daraxtni yarating: Daraxtga birinchi a'zoni qo'shing.
     Qidiruv va Tahrirlash: Daraxtdagi a'zolarni qidirish, tahrirlash yoki o'chirish.
 
-Litsenziya
+Muallif
 
-Ushbu loyiha MIT Litsenziya asosida tarqatiladi. Muallif
-
-Ismingiz: Xaytimetov Samandar
-Portfolio: https://
-Email: sxaytimetov@gmail.com
+- Ismingiz: Xaytimetov Samandar
+- Portfolio: https://
+- Email: sxaytimetov@gmail.com
 
 Barcha qo'llab-quvvatlov uchun rahmat! 😊
