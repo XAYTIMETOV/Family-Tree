@@ -1,179 +1,66 @@
-# Genealogy Application
+Shajara - Oila Daraxti Yaratish Platformasi
 
-English | [Indonesia](README.id.md)
+Shajara - bu foydalanuvchilarga o'z oilaviy daraxtlarini yaratish va ularga a'zolarni qo'shish imkonini beruvchi Laravel asosidagi web ilova. Ushbu platforma oila tarixini saqlash, ajdodlarni o'rganish va oilaviy aloqalarni mustahkamlash uchun ideal vosita hisoblanadi.
+Xususiyatlar
 
-![Laravel](https://laravel.com/assets/img/components/logo-laravel.svg)
+    Oila daraxtini yaratish va ko'rish.
+    A'zolar qo'shish: ota, ona, aka-uka, opa-singil, farzand va boshqalar.
+    Daraxtda a'zolarni tahrirlash va o'chirish.
+    Har bir a'zo uchun batafsil ma'lumot qo'shish (ism, tug'ilgan sana, biografiya, rasm).
+    Chiroyli va intuitiv foydalanuvchi interfeysi.
+    MySQL ma'lumotlar bazasi bilan ishlash.
 
-[![Build Status](https://travis-ci.org/nafiesl/silsilah.svg?branch=master)](https://travis-ci.org/nafiesl/silsilah)
-[![Coverage Status](https://coveralls.io/repos/github/nafiesl/silsilah/badge.svg?branch=master)](https://coveralls.io/github/nafiesl/silsilah?branch=master)
+Texnologiyalar
 
-> **⚠️ Development in progress**  
-> In development progress, any changes of table structure **will be updated** directly to corresponding **migration file**.
+    Backend: Laravel PHP Framework
+    Frontend: HTML, CSS, JavaScript
+    Ma'lumotlar bazasi: MySQL
 
-## About
+O'rnatish
 
-Genealogy (Silsilah) application to record our family members.
+Agar sizda php(XAMPP) o'rnatilmagan bo'lsa, quyidagi havola orqali yuklab olib, o'rnatishingiz mumkin:
 
-## Features
+    https://www.apachefriends.org/
 
-This application uses Bahasa Indonesia and English based on `config.locale`.
+Composer o'rnatish kerak bo'lsa:
 
-### Logic Concept
+    https://getcomposer.org/download/
 
-1. A person can have one father
-2. A person can have one mother
-3. A person can have one parent (couple of mother and father)
-4. A person can have 0 to many children
-5. A person can have 0 to many spouses (husbands or wife)
-6. A couple can have 0 to many children (based on parent_id)
+NodeJS kerak bo'lsa:
 
-### Family Member Entry
+    https://nodejs.org/en
 
-1. Enter Name and Gender
-2. Set Father
-3. Set Mother
-4. Add Spouse
-5. Add Child
+Kerakli paketlar o'rnatib bo'lingandan keyin, quyidagi qadamlarni bajarib, loyihani o'z tizimingizda ishga tushirishingiz mumkin: Repositoryni klonlash: bash git clone https://github.com/XAYTIMETOV/family_tree
 
-### Person Attribute
+Loyihaning papkasiga o'tish: cd shajara
 
-1. Nickname
-2. Gender
-3. Fullname
-4. Date of birth
-5. Date of death (or at least year of death)
-6. Address
-7. Phone Number
-8. Email
+Kerakli kutubxonalarni o'rnatish: composer install
 
-### Couple Attribute (TODO)
+.env faylni o'zgartiring va ma'lumotlar bazasi ma'lumotlarini kiriting:
 
-1. Husband
-2. Wife
-3. Marriage Date
-4. Divorce Date
-5. Address
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=family_tree
+    DB_USERNAME=root
+    DB_PASSWORD=
 
-## How to Install
+Ma'lumotlar bazasini migratsiya qilish: php artisan migrate
 
-### Server Requirements
+Serverni ishga tushirish: php artisan serve
 
-This application can be installed on local server and online server with these specifications :
+Foydalanish:
 
-1. PHP 7.3 (and meet other [Laravel 8.x server requirements](https://laravel.com/docs/8.x/deployment#server-requirements)),
-2. MySQL or MariaDB database,
-3. SQlite (for automated testing).
+    Ro'yxatdan o'ting: O'z akkauntingizni yarating.
+    Daraxtni yarating: Daraxtga birinchi a'zoni qo'shing.
+    Qidiruv va Tahrirlash: Daraxtdagi a'zolarni qidirish, tahrirlash yoki o'chirish.
 
-### Manual Installation
+Litsenziya
 
-1. Clone the repo and move to the application directory.
+Ushbu loyiha MIT Litsenziya asosida tarqatiladi. Muallif
 
-    ```bash
-    git clone https://github.com/nafiesl/silsilah.git
-    cd silsilah
-    ```
+Ismingiz: Xaytimetov Samandar
+Portfolio: https://
+Email: sxaytimetov@gmail.com
 
-2. Install dependencies:
-
-    ```bash
-    composer install
-    ```
-
-3. Create `.env` file:
-
-    ```bash
-    cp .env.example .env
-    ```
-
-4. Generate application key:
-
-    ```bash
-    php artisan key:generate
-    ```
-
-5. Setup database and adjust other environment variables configuration in the `.env` file.
-
-6. Add admin email to the `.env` file (Optional):
-
-    ```bash
-    SYSTEM_ADMIN_EMAILS=admin@email.com;other_admin@email.com
-    ```
-
-7. Migrate database and link storage:
-
-    ```bash
-    php artisan migrate
-    php artisan storage:link
-    ```
-
-8. Run the application:
-
-    ```bash
-    php artisan serve --host 0.0.0.0  --port=8000
-    ```
-
-Open the application in the browser at <http://localhost:8000>.
-
-### Install with Docker
-
-Make sure Docker and Docker Compose are installed.
-
-```bash
-make run-docker
-```
-
-or
-
-```bash
-docker-compose up -d
-```
-
-Open the application in the browser at <http://localhost:8000>.
-
-## Testing
-
-This application built with testing (TDD) using in-memory sqlite database.
-
-```bash
-vendor/bin/phpunit
-```
-
-## Contributing
-
-Feel free to submit Issue for bugs or sugestions and Pull Request.
-
-## Screenshots
-
-### Family Tree
-
-![Family Tree](public/images/02-pohon-keluarga.jpg "Family Tree")
-
-This family tree view is using the [Horizontal Family Tree CSS](https://codepen.io/P233/pen/Kzbsi), thanks to [Peiwen Lu](https://codepen.io/P233/pen/Kzbsi).
-
-### Family Chart
-
-![Family Chart](public/images/03-bagan-keluarga.jpg "Family Chart")
-
-### Search Family Member
-
-![Search Family Member](public/images/01-cari-keluarga.jpg "Search Family Member")
-
-### User Profile
-
-![User Profile](public/images/04-profil.jpg "User Profile")
-
-### Profile Form
-
-![Profile Form](public/images/05-form-profil.jpg "Profile Form")
-
-### Profil Edit Form
-
-![Profil Edit Form](public/images/06-edit-profil.jpg "Profil Edit Form")
-
-### Automated Testing
-
-![Automated Testing](public/images/07-automated-testing.jpg "Automated Testing")
-
-## License
-
-Silsilah project is open-sourced software licensed under the [MIT license](LICENSE).
+Barcha qo'llab-quvvatlov uchun rahmat! 😊
