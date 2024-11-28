@@ -36,6 +36,10 @@ Loyihaning papkasiga o'tish: cd Family-Tree
 
 Composer o'rnatish: composer install
 
+env faylni yarating: 
+
+    cp env.example .env
+
 .env faylni o'zgartiring va ma'lumotlar bazasi ma'lumotlarini kiriting:
 
     DB_CONNECTION=mysql
@@ -45,9 +49,17 @@ Composer o'rnatish: composer install
     DB_USERNAME=root
     DB_PASSWORD=
 
-Ma'lumotlar bazasini migratsiya qilish: php artisan migrate
+Key Generatsiya qiling:
 
-Serverni ishga tushirish: php artisan serve
+    php artisan key:generate
+
+Ma'lumotlar bazasini migratsiya qilish:
+    
+    php artisan migrate
+
+Serverni ishga tushirish:
+
+    php artisan serve
 
 Foydalanish:
 
@@ -55,12 +67,10 @@ Foydalanish:
     Daraxtni yarating: Daraxtga birinchi a'zoni qo'shing.
     Qidiruv va Tahrirlash: Daraxtdagi a'zolarni qidirish, tahrirlash yoki o'chirish.
 
-Litsenziya
+Muallif
 
-Ushbu loyiha MIT Litsenziya asosida tarqatiladi. Muallif
-
-Ismingiz: Xaytimetov Samandar
-Portfolio: https://
-Email: sxaytimetov@gmail.com
+    - Xaytimetov Samandar
+    - Portfolio: https://
+    - Email: sxaytimetov@gmail.com
 
 Barcha qo'llab-quvvatlov uchun rahmat! 😊
