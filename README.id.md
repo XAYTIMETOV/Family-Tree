@@ -17,6 +17,7 @@ Texnologiyalar
     Ma'lumotlar bazasi: MySQL
 
 O'rnatish
+(sizda mavjud bo'lmagan dastur va paketlarni o'rnating, platformani ishlatish vaqtida xatolik kelib chiqmasligi uchun)
 
 Agar sizda php(XAMPP) o'rnatilmagan bo'lsa, quyidagi havola orqali yuklab olib, o'rnatishingiz mumkin:
 
@@ -30,11 +31,17 @@ NodeJS kerak bo'lsa:
 
     https://nodejs.org/en
 
-Kerakli paketlar o'rnatib bo'lingandan keyin, quyidagi qadamlarni bajarib, loyihani o'z tizimingizda ishga tushirishingiz mumkin: Repositoryni klonlash: bash git clone https://github.com/XAYTIMETOV/family_tree
+Kerakli paketlar o'rnatib bo'lingandan keyin, quyidagi qadamlarni bajarib, loyihani o'z tizimingizda ishga tushirishingiz mumkin: Repositoryni klonlash:
 
-Loyihaning papkasiga o'tish: cd Family-Tree
+    git clone https://github.com/XAYTIMETOV/Family-Tree
 
-Composer o'rnatish: composer install
+Loyihaning papkasiga o'tish:
+
+    cd Family-Tree
+
+Composer o'rnatish:
+    
+    composer install
 
 env faylni yarating: 
 
