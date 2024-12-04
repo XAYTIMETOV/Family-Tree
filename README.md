@@ -49,7 +49,7 @@ env faylni yarating:
 
 XAMPPni ishga tushiring:
 
-    ![image](https://github.com/user-attachments/assets/a2762929-0f44-4088-8888-6e99a951698b)
+![image](https://github.com/user-attachments/assets/a2762929-0f44-4088-8888-6e99a951698b)
 
 MySQL da "family_tree" nomi bilan baza yarating, yoki quyidagi kod orqali yarating
 
