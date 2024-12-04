@@ -47,6 +47,14 @@ env faylni yarating:
 
     cp env.example .env
 
+XAMPPni ishga tushiring:
+
+    ![image](https://github.com/user-attachments/assets/a2762929-0f44-4088-8888-6e99a951698b)
+
+MySQL da "family_tree" nomi bilan baza yarating, yoki quyidagi kod orqali yarating
+
+    CREATE DATABASE family_tree;
+
 .env faylni o'zgartiring va ma'lumotlar bazasi ma'lumotlarini kiriting:
 
     DB_CONNECTION=mysql
