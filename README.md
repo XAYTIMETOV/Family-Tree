@@ -37,7 +37,7 @@ Kerakli paketlar o'rnatib bo'lingandan keyin, quyidagi qadamlarni bajarib, loyih
 
 Loyihaning papkasiga o'tish:
 
-    cd Family-Tree
+    cd Family-Tree-main
 
 Composer o'rnatish:
     
@@ -51,7 +51,7 @@ XAMPPni ishga tushiring:
 
 ![image](https://github.com/user-attachments/assets/a2762929-0f44-4088-8888-6e99a951698b)
 
-MySQL da "family_tree" nomi bilan baza yarating, yoki quyidagi kod orqali yarating
+MySQL da "family_tree" nomi bilan baza yarating, yoki quyidagi kod orqali yarating:
 
     CREATE DATABASE family_tree;
 
