@@ -2,18 +2,18 @@
 
 return [
     // Labels
-    'show'               => 'Show Marriage Profile',
-    'detail'             => 'Marriage Profile',
-    'childs_count'       => 'Childs Count',
-    'grand_childs_count' => 'Grand Childs Count',
+    'show'               => 'Nikoh Profilini Ko\'rsatish',
+    'detail'             => 'Nikoh Profili',
+    'childs_count'       => 'Bolalar Soni',
+    'grand_childs_count' => 'Chaqaloqlar Soni',
 
     // Actions
-    'edit'               => 'Edit Marriage',
-    'update'             => 'Update Marriage',
+    'edit'               => 'Nikohni Tahrirlash',
+    'update'             => 'Nikohni Yangilash',
 
     // Attributes
-    'husband'            => 'Head of Family',
-    'wife'               => 'Wife',
-    'marriage_date'      => 'Marriage Date',
-    'divorce_date'       => 'Divorce Date',
+    'husband'            => 'Oilani Boshqaruvchi',
+    'wife'               => 'Xotin',
+    'marriage_date'      => 'Nikoh Sana',
+    'divorce_date'       => 'Ajralish Sana',
 ];

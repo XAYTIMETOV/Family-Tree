@@ -4,20 +4,20 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Password Reset Language Lines
+    | Parolni tiklash tili satrlari
     |--------------------------------------------------------------------------
     |
-    | The following language lines are the default lines which match reasons
-    | that are given by the password broker for a password update attempt
-    | has failed, such as for an invalid token or invalid new password.
+    | Quyidagi tildagi satrlar parolni tiklashga urinishda berilgan sabablarga
+    | mos keladigan xatolik xabarlarini o'z ichiga oladi, masalan, noto'g'ri
+    | token yoki noto'g'ri yangi parol.
     |
     */
 
-    'password' => 'Passwords must be at least six characters and match the confirmation.',
-    'reset'    => 'Your password has been reset!',
-    'sent'     => 'We have e-mailed your password reset link!',
-    'token'    => 'This password reset token is invalid.',
-    'user'     => "We can't find a user with that e-mail address.",
-    "old_password" => "Your current password does not matches with the password you provided. Please try again.",
-    "same_password" => "New password cannot be same as your current password. Please choose a different password."
+    'password' => 'Parollar kamida oltita belgidan iborat bo\'lishi va tasdiq bilan mos kelishi kerak.',
+    'reset'    => 'Sizning parolingiz tiklandi!',
+    'sent'     => 'Biz sizning parolni tiklash havolangizni elektron pochta orqali yubordik!',
+    'token'    => 'Ushbu parolni tiklash tokeni noto\'g\'ri.',
+    'user'     => 'Biz bu elektron pochta manzili bilan foydalanuvchini topa olmadik.',
+    'old_password' => 'Sizning joriy parolingiz kiritgan parolingiz bilan mos kelmaydi. Iltimos, qaytadan urinib ko\'ring.',
+    'same_password' => 'Yangi parol joriy parolingiz bilan bir xil bo\'lmasligi kerak. Iltimos, boshqa parol tanlang.'
 ];
