@@ -37,7 +37,7 @@ Kerakli paketlar o'rnatib bo'lingandan keyin, quyidagi qadamlarni bajarib, loyih
 
 Loyihaning papkasiga o'tish:
 
-    cd Family-Tree-main
+    cd Family-Tree
 
 Composer o'rnatish:
     
