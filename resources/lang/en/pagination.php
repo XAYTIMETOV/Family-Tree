@@ -4,16 +4,15 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Pagination Language Lines
+    | Sahifalash Tili Satrlari
     |--------------------------------------------------------------------------
     |
-    | The following language lines are used by the paginator library to build
-    | the simple pagination links. You are free to change them to anything
-    | you want to customize your views to better match your application.
+    | Quyidagi tildagi satrlar paginator kutubxonasi tomonidan sahifalash havolalarini yaratish uchun ishlatiladi.
+    | Siz ularni o'zgartirishda erkinsiz, bu sizning ko'rinishlaringizni ilovangizga yaxshiroq moslashtirish uchun.
     |
     */
 
-    'previous' => '&laquo; Previous',
-    'next'     => 'Next &raquo;',
+    'previous' => '&laquo; Oldingi',
+    'next'     => 'Keyingi &raquo;',
 
 ];
