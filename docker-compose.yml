@@ -13,9 +13,9 @@ services:
       - DB_CONNECTION=mysql
       - DB_HOST=mysql
       - DB_PORT=3306
-      - DB_DATABASE=silsilah
-      - DB_USERNAME=root1234
-      - DB_PASSWORD=test1234
+      - DB_DATABASE=family_tree
+      - DB_USERNAME=root
+      - DB_PASSWORD=
 
   # Database
   mysql:
@@ -26,10 +26,10 @@ services:
     healthcheck:
       test: mysqladmin ping -h localhost
     environment:
-      - MYSQL_USER=root1234
-      - MYSQL_PASSWORD=test1234
-      - MYSQL_ROOT_PASSWORD=test1234
-      - MYSQL_DATABASE=silsilah
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=family_tree
     volumes:
       - ./docs/db:/docker-entrypoint-initdb.d
     logging:
